@@ -16,3 +16,4 @@ jobs:
         with:
           branch: gh-pages
           folder: nirvana
+          clean: true
