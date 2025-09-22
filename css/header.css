@@ -1,0 +1,15 @@
+header {
+    background: var(--header_bg);
+    color: var(--header_color);
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem
+}
+
+h1 {
+    margin: 0;
+}

@@ -1,0 +1,39 @@
+/* декстоп (≥1024px): sidebar справа */
+@media (min-width: 1024px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 320px;
+        gap: 1rem;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #toc-toggle {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* мобилка (≤768px): всё в столбик */
+@media (max-width: 768px) {
+    main {
+        display: block;
+    }
+
+    .sidebar {
+        margin-top: 1rem;
+    }
+
+    #toc-toggle {
+        width: 100%;
+        text-align: center;
+    }
+
+    #toc-panel.open {
+        max-height: 1000px;
+    }
+}

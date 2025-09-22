@@ -1,0 +1,55 @@
+/* кнопка */
+#toc-toggle {
+    background: var(--accent);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* при наведении */
+#toc-toggle:hover {
+    background: orange;
+    transform: scale(1.05);
+}
+
+/* при активном нажатии */
+#toc-toggle:active {
+    transform: scale(0.95);
+}
+
+/* содержание */
+#toc-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.4s ease;
+    opacity: 0;
+}
+
+#toc-panel.open {
+    max-height: 500px;
+    opacity: 1;
+}
+
+#toc-panel ol {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+#toc-panel li {
+    margin: 0.3rem 0;
+}
+
+#toc-panel a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#toc-panel a:hover {
+    color: orange;
+}
