@@ -1,0 +1,22 @@
+/* темная тема (по умолчанию) */
+:root {
+    --bg: black;
+    --header_bg: black;
+    --header_color: yellow;
+    --card: black;
+    --text: white;
+    --muted: gray;
+    --accent: yellow;
+    --container: 1000px;
+}
+
+/* светлая тема */
+:root.light {
+    --bg: white;
+    --header_bg: white;
+    --header_color: black;
+    --card: #f9f9f9;
+    --text: black;
+    --muted: #555;
+    --accent: #ff6900;
+}
